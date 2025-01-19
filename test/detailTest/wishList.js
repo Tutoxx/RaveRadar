@@ -1,6 +1,6 @@
 let wishList = JSON.parse(localStorage.getItem('wishList')) || [];
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const wishListContainer = document.getElementById('wishList-container');
     const eventsContainer = document.getElementById('events-container');
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Handle checkbox changes
                 document.querySelectorAll('.event-checkbox').forEach(checkbox => {
-                    checkbox.addEventListener('change', function() {
+                    checkbox.addEventListener('change', function () {
                         const eventId = parseInt(this.getAttribute('data-event-id'));
                         if (this.checked) {
                             if (!wishList.includes(eventId)) {
@@ -64,5 +64,3 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error fetching events:', error));
 });
-
-
