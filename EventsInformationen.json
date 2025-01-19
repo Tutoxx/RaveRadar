@@ -1,0 +1,40 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "name": "Event 1",
+            "img": "Flyer1.jpg",
+            "date": "25.05.2025",
+            "location": "New York, NY",
+            "genre": "Electronic",
+            "price": 50,
+            "description": "An exciting music event in New York.",
+            "longitude": -74.0060,
+            "latitude": 40.7128
+        },
+        {
+            "id": 2,
+            "name": "Event 2",
+            "img": "Flyer2.jpg",
+            "date": "12.04.2025",
+            "location": "Los Angeles, CA",
+            "genre": "House",
+            "price": 60,
+            "description": "A thrilling concert in Los Angeles.",
+            "longitude": -118.2437,
+            "latitude": 34.0522
+        },
+        {
+            "id": 3,
+            "name": "Event 3",
+            "img": "Flyer3.jpg",
+            "date": "12.05.2025",
+            "location": "Chicago, IL",
+            "genre": "Techno",
+            "price": 55,
+            "description": "A spectacular show in Chicago.",
+            "longitude": -87.6298,
+            "latitude": 41.8781
+        }
+    ]
+}
