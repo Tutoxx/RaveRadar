@@ -1,66 +1,66 @@
-let wishList = []; 
-
+let wishList = JSON.parse(localStorage.getItem('wishList')) || [];
 
 document.addEventListener('DOMContentLoaded', function() {
+    const wishListContainer = document.getElementById('wishList-container');
+    const eventsContainer = document.getElementById('events-container');
+
     fetch('detailTest.json')
         .then(response => response.json())
         .then(events => {
-            const container = document.getElementById('wishList-container');
-            events.forEach(event => {
-                
-                wishList.forEach(element => {
-                    if(event.id == element){
+            if (wishListContainer) {
+                // Populate wishlist page
+                events.forEach(event => {
+                    if (wishList.includes(event.id)) {
                         const eventDiv = document.createElement('div');
                         eventDiv.className = 'event';
-                        eventDiv.innerHTML = 
-                            `<h2>${event.name}</h2>
+                        eventDiv.innerHTML = `
+                            <h2>${event.name}</h2>
                             <p>${event.date}</p>
                             <p>${event.description}</p>
                             <p>${event.location}</p>`;
-                            
-                        container.appendChild(eventDiv);
+                        wishListContainer.appendChild(eventDiv);
                     }
                 });
-            });
-        })
-        .catch(error => console.error('Error fetching events:', error));
-});
+            }
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('detailTest.json')
-        .then(response => response.json())
-        .then(events => {
-            const container = document.getElementById('events-container');
-            events.forEach(event => {
-                const eventDiv = document.createElement('div');
-                eventDiv.className = 'event';
-                eventDiv.innerHTML = 
-                    `<h2>${event.name}</h2>
-                    <p>${event.date}</p>
-                    <p>${event.description}</p>
-                    <p>${event.location}</p>
-                    <label>
-                        <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
-                        wishlist
-                    </label>`;
-
-                container.appendChild(eventDiv);
-            });
-
-            // Event-Listener für die Checkboxen
-            const checkboxes = document.querySelectorAll('.event-checkbox');
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', function() {
-                    const eventId = this.getAttribute('data-event-id');
-                    const isChecked = this.checked;
-                    if (this.checked) {
-                        wishList.push(eventId)
-                        alert(eventId)
-                    }
-                                        
+            if (eventsContainer) {
+                // Populate events page
+                events.forEach(event => {
+                    const eventDiv = document.createElement('div');
+                    eventDiv.className = 'event';
+                    eventDiv.innerHTML = `
+                        <h2>${event.name}</h2>
+                        <p>${event.date}</p>
+                        <p>${event.description}</p>
+                        <p>${event.location}</p>
+                        <label>
+                            <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
+                            Add to Wishlist
+                        </label>`;
+                    eventsContainer.appendChild(eventDiv);
                 });
-            });
+
+                // Handle checkbox changes
+                document.querySelectorAll('.event-checkbox').forEach(checkbox => {
+                    checkbox.addEventListener('change', function() {
+                        const eventId = parseInt(this.getAttribute('data-event-id'));
+                        if (this.checked) {
+                            if (!wishList.includes(eventId)) {
+                                wishList.push(eventId);
+                            }
+                        } else {
+                            wishList = wishList.filter(id => id !== eventId);
+                        }
+                        localStorage.setItem('wishList', JSON.stringify(wishList));
+                    });
+
+                    // Set checkbox state based on wishList
+                    const eventId = parseInt(checkbox.getAttribute('data-event-id'));
+                    if (wishList.includes(eventId)) {
+                        checkbox.checked = true;
+                    }
+                });
+            }
         })
         .catch(error => console.error('Error fetching events:', error));
 });
