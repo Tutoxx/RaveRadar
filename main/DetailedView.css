@@ -19,6 +19,7 @@ body {
     text-shadow: 2px 2px #000000;
 }
 img {
-float: left;
-
+    float: left;
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
 }
