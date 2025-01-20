@@ -31,6 +31,7 @@ Quellenverzeichnis:
 
     Bilder:
 
+<<<<<<< HEAD
         Flyer:
         https://de.pinterest.com/pin/791085490829813546/
         https://de.pinterest.com/pin/791085490829813534/
@@ -54,3 +55,7 @@ Quellenverzeichnis:
 
         Hintergrundbild:
         https://de.pinterest.com/pin/791085490829770043/
+=======
+FEHLT NOCH: angeben was von KI generierter code ist!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+calculate distance function
+>>>>>>> 8ef65fac199574d842df8173e27fe474133d193b
