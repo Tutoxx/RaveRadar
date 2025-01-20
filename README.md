@@ -25,3 +25,6 @@ https://github.com
 Unser repository: https://github.com/Tutoxx/RaveRadar
 
 Bilder:
+links zu den bildern
+
+FEHLT NOCH: angeben was von KI generierter code ist!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
