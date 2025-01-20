@@ -1,30 +1,17 @@
 const lonBerlin = 13.404954;
 const latBerlin = 52.520007;
+let pos;
 
-
-
-
-async function main() {
+//gets position data for further calculation on startup
+async function startUp(){
     try {
-        const entfernung = await workWithPos(latBerlin, lonBerlin);
-        return entfernung;
-    } catch (error) {
-        alert(`Fehler: ${error}`);
-    }
-}
-
-
-
-async function workWithPos(latInput, lonInput) {
-    try {
-        const pos = await getPos();
-        const distance = calculateDistance(pos.lat, pos.lon, latInput, lonInput);
-        return distance;
+        pos = await getPos();
     } catch (error) {
         throw new Error(error);
     }
 }
 
+//gets position data from browser (bodenlose fickerei, weil js asynchron ist)
 function getPos(){
     const meinPromise = new Promise((resolve, reject) => {
         if ("geolocation" in navigator) {
@@ -32,7 +19,6 @@ function getPos(){
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
                 resolve({ lat, lon });
-
             }, function(error) {
                 console.log("Fehler bei der Standortbestimmung");
                 reject("Fehler bei der Standortbestimmung");
@@ -45,25 +31,10 @@ function getPos(){
     return meinPromise;
 }
 
-function CalculateDistanceToPosition(latPoint, lonPoint) {
-    if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            const latUser = position.coords.latitude;
-            const lonUser = position.coords.longitude;
-
-            let distance = calculateDistance(latUser, lonUser, latPoint, lonPoint);
-            return distance;
-            alert(distance);
-
-        }, function(error) {
-            document.getElementById("status").textContent = "Fehler bei der Standortbestimmung.";
-        });
-    } else {
-        document.getElementById("status").textContent = "Geolocation wird von diesem Browser nicht unterstützt.";
-    }
-}
-
-function calculateDistance(lat1, lon1, lat2, lon2) {
+//berechnet entfernung zwischen der position des Users und einer angegbenen position
+function calculateDistance(lat1, lon1) {
+    const lat2 = pos.lat;
+    const lon2 = pos.lon;
     const R = 6371; // Erdradius in Kilometern
     const dLat = (lat2 - lat1) * Math.PI / 180;
     const dLon = (lon2 - lon1) * Math.PI / 180;
@@ -76,5 +47,16 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 };
 
 
-let test = main();
-alert("enternung: " + test);
+function alertDistance() {
+    let distance = calculateDistance(latBerlin, lonBerlin)
+    alert(distance);
+}
+
+
+
+startUp();
+
+
+document.getElementById("button").onclick = alertDistance;
+
+
