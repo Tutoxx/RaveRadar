@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const eventsContainer = document.getElementById('events-container');
     const filterButton = document.getElementById('filter-button');
 
-    fetch('detailTest.json')
+    fetch('events.json')
         .then(response => response.json())
         .then(events => {
             //läd alle Elemente auf der Startseite
