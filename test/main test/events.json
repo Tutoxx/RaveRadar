@@ -1,0 +1,76 @@
+[
+    {
+        "id": 0,
+        "name": "Event 1",
+        "date": "2023-11-01",
+        "description": "Annual Tech Conference",
+        "location": "San Francisco, CA",
+        "attendees": 500,
+        "organizer": "Tech Innovators Inc.",
+        "geoLocation": {
+            "latitude": 37.7749,
+            "longitude": -122.4194
+        }
+    },
+    {
+        "id": 1,
+        "name": "Event 2",
+        "date": "2023-12-15",
+        "description": "Winter Music Festival",
+        "location": "New York, NY",
+        "performers": ["Band A", "Artist B"],
+        "ticketsSold": 2000,
+        "geoLocation": {
+            "latitude": 40.7128,
+            "longitude": -74.0060
+        }
+    },
+    {
+        "id": 2,
+        "date": "2024-01-10",
+        "description": "Art Exhibition Opening",
+        "location": "Los Angeles, CA",
+        "artists": ["Artist X", "Artist Y"],
+        "gallery": "Modern Art Gallery",
+        "geoLocation": {
+            "latitude": 34.0522,
+            "longitude": -118.2437
+        }
+    },
+    {
+        "id": 3,
+        "date": "2024-02-20",
+        "description": "Startup Pitch Night",
+        "location": "Austin, TX",
+        "startups": ["Startup 1", "Startup 2"],
+        "investors": ["Investor A", "Investor B"],
+        "geoLocation": {
+            "latitude": 30.2672,
+            "longitude": -97.7431
+        }
+    },
+    {
+        "id": 4,
+        "date": "2024-03-05",
+        "description": "Charity Run",
+        "location": "Chicago, IL",
+        "distance": "5K",
+        "beneficiary": "Local Children's Hospital",
+        "geoLocation": {
+            "latitude": 41.8781,
+            "longitude": -87.6298
+        }
+    },
+    {
+        "id": 5,
+        "date": "2024-03-05",
+        "description": "Charity Run 2",
+        "location": "Chicago, IL",
+        "distance": "5K",
+        "beneficiary": "Local Children's Hospital",
+        "geoLocation": {
+            "latitude": 41.8781,
+            "longitude": -87.6298
+        }
+    }
+]
