@@ -10,7 +10,7 @@
             "postleitzahl": "10178",
             "hausnummer": 23,
             "genre": "Electronic",
-            "price": 50,
+            "price": 18,
             "description": "An exciting music event in Berlin.",
             "geolocation": {
                 "longitude": 13.4050,
@@ -27,7 +27,7 @@
             "postleitzahl": "80331",
             "hausnummer": 45,
             "genre": "House",
-            "price": 60,
+            "price": 21,
             "description": "A thrilling concert in Munich.",
             "geolocation": {
                 "longitude": 11.5820,
@@ -44,7 +44,7 @@
             "postleitzahl": "20359",
             "hausnummer": 67,
             "genre": "Techno",
-            "price": 55,
+            "price": 22,
             "description": "A spectacular show in Hamburg.",
             "geolocation": {
                 "longitude": 9.9937,
@@ -61,7 +61,7 @@
             "postleitzahl": "60313",
             "hausnummer": 12,
             "genre": "Trance",
-            "price": 70,
+            "price": 25,
             "description": "A vibrant event in Frankfurt.",
             "geolocation": {
                 "longitude": 8.6821,
@@ -78,7 +78,7 @@
             "postleitzahl": "50667",
             "hausnummer": 89,
             "genre": "Dubstep",
-            "price": 65,
+            "price": 17,
             "description": "An electrifying event in Cologne.",
             "geolocation": {
                 "longitude": 6.9603,
@@ -95,7 +95,7 @@
             "postleitzahl": "70173",
             "hausnummer": 34,
             "genre": "EDM",
-            "price": 80,
+            "price": 19,
             "description": "A high-energy event in Stuttgart.",
             "geolocation": {
                 "longitude": 9.1829,
@@ -112,7 +112,7 @@
             "postleitzahl": "40212",
             "hausnummer": 56,
             "genre": "Drum and Bass",
-            "price": 55,
+            "price": 23,
             "description": "A dynamic event in Düsseldorf.",
             "geolocation": {
                 "longitude": 6.7762,
@@ -129,7 +129,7 @@
             "postleitzahl": "04109",
             "hausnummer": 78,
             "genre": "Tech House",
-            "price": 60,
+            "price": 24,
             "description": "A fantastic event in Leipzig.",
             "geolocation": {
                 "longitude": 12.3811,
@@ -146,7 +146,7 @@
             "postleitzahl": "01069",
             "hausnummer": 21,
             "genre": "Progressive House",
-            "price": 70,
+            "price": 18,
             "description": "An amazing event in Dresden.",
             "geolocation": {
                 "longitude": 13.7373,
@@ -163,7 +163,7 @@
             "postleitzahl": "28195",
             "hausnummer": 43,
             "genre": "Hardstyle",
-            "price": 75,
+            "price": 28,
             "description": "A thrilling event in Bremen.",
             "geolocation": {
                 "longitude": 8.8078,
@@ -180,7 +180,7 @@
             "postleitzahl": "30159",
             "hausnummer": 65,
             "genre": "Psytrance",
-            "price": 65,
+            "price": 21,
             "description": "A psychedelic event in Hannover.",
             "geolocation": {
                 "longitude": 9.7370,
@@ -197,7 +197,7 @@
             "postleitzahl": "90403",
             "hausnummer": 87,
             "genre": "Trap",
-            "price": 60,
+            "price": 22,
             "description": "A bass-heavy event in Nuremberg.",
             "geolocation": {
                 "longitude": 11.0775,
@@ -214,7 +214,7 @@
             "postleitzahl": "45127",
             "hausnummer": 32,
             "genre": "Future House",
-            "price": 70,
+            "price": 16,
             "description": "A futuristic event in Essen.",
             "geolocation": {
                 "longitude": 7.0123,
@@ -231,7 +231,7 @@
             "postleitzahl": "44137",
             "hausnummer": 54,
             "genre": "Electro House",
-            "price": 75,
+            "price": 25,
             "description": "An electrifying event in Dortmund.",
             "geolocation": {
                 "longitude": 7.4653,
@@ -248,7 +248,7 @@
             "postleitzahl": "47051",
             "hausnummer": 76,
             "genre": "Big Room",
-            "price": 80,
+            "price": 22,
             "description": "A massive event in Duisburg.",
             "geolocation": {
                 "longitude": 6.7735,
@@ -265,7 +265,7 @@
             "postleitzahl": "68161",
             "hausnummer": 98,
             "genre": "Deep House",
-            "price": 65,
+            "price": 23,
             "description": "A deep and soulful event in Mannheim.",
             "geolocation": {
                 "longitude": 8.4660,
@@ -282,7 +282,7 @@
             "postleitzahl": "76133",
             "hausnummer": 11,
             "genre": "Minimal",
-            "price": 70,
+            "price": 27,
             "description": "A minimalistic event in Karlsruhe.",
             "geolocation": {
                 "longitude": 8.4037,
@@ -299,7 +299,7 @@
             "postleitzahl": "79098",
             "hausnummer": 29,
             "genre": "Techno",
-            "price": 60,
+            "price": 23,
             "description": "A techno event in Freiburg.",
             "geolocation": {
                 "longitude": 7.8522,
@@ -316,7 +316,7 @@
             "postleitzahl": "55116",
             "hausnummer": 53,
             "genre": "House",
-            "price": 65,
+            "price": 19,
             "description": "A house music event in Mainz.",
             "geolocation": {
                 "longitude": 8.2711,
