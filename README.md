@@ -28,3 +28,4 @@ Bilder:
 links zu den bildern
 
 FEHLT NOCH: angeben was von KI generierter code ist!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+calculate distance function
