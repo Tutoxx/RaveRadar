@@ -1,0 +1,327 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "name": "Event 1",
+            "img": "Flyer1.jpg",
+            "date": "25.05.2025",
+            "stadt": "Berlin, Germany",
+            "straße": "Alexanderplatz",
+            "postleitzahl": "10178",
+            "hausnummer": 23,
+            "genre": "Electronic",
+            "price": 50,
+            "description": "An exciting music event in Berlin.",
+            "geolocation": {
+                "longitude": 13.4050,
+                "latitude": 52.5200
+            }
+        },
+        {
+            "id": 2,
+            "name": "Event 2",
+            "img": "Flyer2.jpg",
+            "date": "12.04.2025",
+            "stadt": "Munich, Germany",
+            "straße": "Marienplatz",
+            "postleitzahl": "80331",
+            "hausnummer": 45,
+            "genre": "House",
+            "price": 60,
+            "description": "A thrilling concert in Munich.",
+            "geolocation": {
+                "longitude": 11.5820,
+                "latitude": 48.1351
+            }
+        },
+        {
+            "id": 3,
+            "name": "Event 3",
+            "img": "Flyer3.jpg",
+            "date": "12.05.2025",
+            "stadt": "Hamburg, Germany",
+            "straße": "Reeperbahn",
+            "postleitzahl": "20359",
+            "hausnummer": 67,
+            "genre": "Techno",
+            "price": 55,
+            "description": "A spectacular show in Hamburg.",
+            "geolocation": {
+                "longitude": 9.9937,
+                "latitude": 53.5511
+            }
+        },
+        {
+            "id": 4,
+            "name": "Event 4",
+            "img": "Flyer4.jpg",
+            "date": "15.06.2025",
+            "stadt": "Frankfurt, Germany",
+            "straße": "Zeil",
+            "postleitzahl": "60313",
+            "hausnummer": 12,
+            "genre": "Trance",
+            "price": 70,
+            "description": "A vibrant event in Frankfurt.",
+            "geolocation": {
+                "longitude": 8.6821,
+                "latitude": 50.1109
+            }
+        },
+        {
+            "id": 5,
+            "name": "Event 5",
+            "img": "Flyer5.jpg",
+            "date": "20.07.2025",
+            "stadt": "Cologne, Germany",
+            "straße": "Hohe Straße",
+            "postleitzahl": "50667",
+            "hausnummer": 89,
+            "genre": "Dubstep",
+            "price": 65,
+            "description": "An electrifying event in Cologne.",
+            "geolocation": {
+                "longitude": 6.9603,
+                "latitude": 50.9375
+            }
+        },
+        {
+            "id": 6,
+            "name": "Event 6",
+            "img": "Flyer6.jpg",
+            "date": "30.08.2025",
+            "stadt": "Stuttgart, Germany",
+            "straße": "Königstraße",
+            "postleitzahl": "70173",
+            "hausnummer": 34,
+            "genre": "EDM",
+            "price": 80,
+            "description": "A high-energy event in Stuttgart.",
+            "geolocation": {
+                "longitude": 9.1829,
+                "latitude": 48.7758
+            }
+        },
+        {
+            "id": 7,
+            "name": "Event 7",
+            "img": "Flyer7.jpg",
+            "date": "05.09.2025",
+            "stadt": "Düsseldorf, Germany",
+            "straße": "Königsallee",
+            "postleitzahl": "40212",
+            "hausnummer": 56,
+            "genre": "Drum and Bass",
+            "price": 55,
+            "description": "A dynamic event in Düsseldorf.",
+            "geolocation": {
+                "longitude": 6.7762,
+                "latitude": 51.2217
+            }
+        },
+        {
+            "id": 8,
+            "name": "Event 8",
+            "img": "Flyer8.jpg",
+            "date": "10.10.2025",
+            "stadt": "Leipzig, Germany",
+            "straße": "Augustusplatz",
+            "postleitzahl": "04109",
+            "hausnummer": 78,
+            "genre": "Tech House",
+            "price": 60,
+            "description": "A fantastic event in Leipzig.",
+            "geolocation": {
+                "longitude": 12.3811,
+                "latitude": 51.3397
+            }
+        },
+        {
+            "id": 9,
+            "name": "Event 9",
+            "img": "Flyer9.jpg",
+            "date": "15.11.2025",
+            "stadt": "Dresden, Germany",
+            "straße": "Prager Straße",
+            "postleitzahl": "01069",
+            "hausnummer": 21,
+            "genre": "Progressive House",
+            "price": 70,
+            "description": "An amazing event in Dresden.",
+            "geolocation": {
+                "longitude": 13.7373,
+                "latitude": 51.0504
+            }
+        },
+        {
+            "id": 10,
+            "name": "Event 10",
+            "img": "Flyer10.jpg",
+            "date": "20.12.2025",
+            "stadt": "Bremen, Germany",
+            "straße": "Schlachte",
+            "postleitzahl": "28195",
+            "hausnummer": 43,
+            "genre": "Hardstyle",
+            "price": 75,
+            "description": "A thrilling event in Bremen.",
+            "geolocation": {
+                "longitude": 8.8078,
+                "latitude": 53.0758
+            }
+        },
+        {
+            "id": 11,
+            "name": "Event 11",
+            "img": "Flyer11.jpg",
+            "date": "25.01.2026",
+            "stadt": "Hannover, Germany",
+            "straße": "Kröpcke",
+            "postleitzahl": "30159",
+            "hausnummer": 65,
+            "genre": "Psytrance",
+            "price": 65,
+            "description": "A psychedelic event in Hannover.",
+            "geolocation": {
+                "longitude": 9.7370,
+                "latitude": 52.3759
+            }
+        },
+        {
+            "id": 12,
+            "name": "Event 12",
+            "img": "Flyer12.jpg",
+            "date": "30.02.2026",
+            "stadt": "Nuremberg, Germany",
+            "straße": "Hauptmarkt",
+            "postleitzahl": "90403",
+            "hausnummer": 87,
+            "genre": "Trap",
+            "price": 60,
+            "description": "A bass-heavy event in Nuremberg.",
+            "geolocation": {
+                "longitude": 11.0775,
+                "latitude": 49.4521
+            }
+        },
+        {
+            "id": 13,
+            "name": "Event 13",
+            "img": "Flyer13.jpg",
+            "date": "05.03.2026",
+            "stadt": "Essen, Germany",
+            "straße": "Kennedyplatz",
+            "postleitzahl": "45127",
+            "hausnummer": 32,
+            "genre": "Future House",
+            "price": 70,
+            "description": "A futuristic event in Essen.",
+            "geolocation": {
+                "longitude": 7.0123,
+                "latitude": 51.4556
+            }
+        },
+        {
+            "id": 14,
+            "name": "Event 14",
+            "img": "Flyer14.jpg",
+            "date": "10.04.2026",
+            "stadt": "Dortmund, Germany",
+            "straße": "Westenhellweg",
+            "postleitzahl": "44137",
+            "hausnummer": 54,
+            "genre": "Electro House",
+            "price": 75,
+            "description": "An electrifying event in Dortmund.",
+            "geolocation": {
+                "longitude": 7.4653,
+                "latitude": 51.5136
+            }
+        },
+        {
+            "id": 15,
+            "name": "Event 15",
+            "img": "Flyer15.jpg",
+            "date": "15.05.2026",
+            "stadt": "Duisburg, Germany",
+            "straße": "Königstraße",
+            "postleitzahl": "47051",
+            "hausnummer": 76,
+            "genre": "Big Room",
+            "price": 80,
+            "description": "A massive event in Duisburg.",
+            "geolocation": {
+                "longitude": 6.7735,
+                "latitude": 51.4344
+            }
+        },
+        {
+            "id": 16,
+            "name": "Event 16",
+            "img": "Flyer16.jpg",
+            "date": "20.06.2026",
+            "stadt": "Mannheim, Germany",
+            "straße": "Paradeplatz",
+            "postleitzahl": "68161",
+            "hausnummer": 98,
+            "genre": "Deep House",
+            "price": 65,
+            "description": "A deep and soulful event in Mannheim.",
+            "geolocation": {
+                "longitude": 8.4660,
+                "latitude": 49.4875
+            }
+        },
+        {
+            "id": 17,
+            "name": "Event 17",
+            "img": "Flyer17.jpg",
+            "date": "25.07.2026",
+            "stadt": "Karlsruhe, Germany",
+            "straße": "Marktplatz",
+            "postleitzahl": "76133",
+            "hausnummer": 11,
+            "genre": "Minimal",
+            "price": 70,
+            "description": "A minimalistic event in Karlsruhe.",
+            "geolocation": {
+                "longitude": 8.4037,
+                "latitude": 49.0069
+            }
+        },
+        {
+            "id": 18,
+            "name": "Event 18",
+            "img": "Flyer18.jpg",
+            "date": "30.08.2026",
+            "stadt": "Freiburg, Germany",
+            "straße": "Münsterplatz",
+            "postleitzahl": "79098",
+            "hausnummer": 29,
+            "genre": "Techno",
+            "price": 60,
+            "description": "A techno event in Freiburg.",
+            "geolocation": {
+                "longitude": 7.8522,
+                "latitude": 47.9959
+            }
+        },
+        {
+            "id": 19,
+            "name": "Event 19",
+            "img": "Flyer19.jpg",
+            "date": "05.09.2026",
+            "stadt": "Mainz, Germany",
+            "straße": "Ludwigsstraße",
+            "postleitzahl": "55116",
+            "hausnummer": 53,
+            "genre": "House",
+            "price": 65,
+            "description": "A house music event in Mainz.",
+            "geolocation": {
+                "longitude": 8.2711,
+                "latitude": 50.0000
+            }
+        }
+    ]
+}
