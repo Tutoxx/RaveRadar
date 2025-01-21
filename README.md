@@ -54,4 +54,4 @@ Quellenverzeichnis:
         https://de.pinterest.com/pin/791085490829770043/
 
 FEHLT NOCH: angeben was von KI generierter code ist!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-zum Beispiel die "calculateDistance" funktion
+zum Beispiel die "calculateDistance" function
