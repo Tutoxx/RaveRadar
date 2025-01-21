@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
                         <img class="eventIMG" src="${event.img}">
-                        <div class="eventText">
                         <h2 class="eventH2">${event.name}</h2>
                         
                         <p class="eventP">${event.date}</p>
@@ -87,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         
                         <p class="eventP">${event.genre}</p>
                         <a href="detail.html?eventId=${event.id}">details</a>
-                        </div>
+                        <br>
                         <label>
                             <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
                             Add to Wishlist

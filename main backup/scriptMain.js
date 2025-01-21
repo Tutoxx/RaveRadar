@@ -2,7 +2,7 @@ let wishList = JSON.parse(localStorage.getItem('wishList')) || [];
 let pos; //user position
 
 //gets position data for further calculation on startup
-async function startUp() {
+async function startUp(){
     try {
         pos = await getPos();
     } catch (error) {
@@ -11,14 +11,14 @@ async function startUp() {
 }
 
 //gets position data from browser (bodenlose fickerei, weil js asynchron ist)
-function getPos() {
+function getPos(){
     const meinPromise = new Promise((resolve, reject) => {
         if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function (position) {
+            navigator.geolocation.getCurrentPosition(function(position) {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
                 resolve({ lat, lon });
-            }, function (error) {
+            }, function(error) {
                 console.log("Fehler bei der Standortbestimmung");
                 reject("Fehler bei der Standortbestimmung");
             });
@@ -45,7 +45,7 @@ function calculateDistance(lat1, lon1) {
     return R * c; // Entfernung in Kilometern
 };
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const wishListContainer = document.getElementById('wishList-container');
     const eventsContainer = document.getElementById('events-container');
     const filterButton = document.getElementById('filter-button');
@@ -75,29 +75,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     eventsContainer.innerHTML = '';
                     filteredEvents.forEach(event => {
                         const eventDiv = document.createElement('div');
-                        eventDiv.className = 'event';
+                        eventDiv.className = 'event';                        
                         eventDiv.innerHTML = `
-                        <img class="eventIMG" src="${event.img}">
-                        <div class="eventText">
-                        <h2 class="eventH2">${event.name}</h2>
-                        
-                        <p class="eventP">${event.date}</p>
-                        
-                        <p class="eventP">${event.city}</p>
-                        
-                        <p class="eventP">${event.genre}</p>
-                        <a href="detail.html?eventId=${event.id}">details</a>
-                        </div>
-                        <label>
-                            <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
-                            Add to Wishlist
-                        </label>`;
+                            <h2 class="eventH2">${event.name}</h2>
+                            <p class="eventP">${event.date}</p>
+                            <p class="eventP">${event.description}</p>
+                            <a href="detail.html?eventId=${event.id}">details</a>
+                            <p class="eventP">${event.location}</p>
+                            <label>
+                                <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
+                                Add to Wishlist
+                            </label>`;
                         eventsContainer.appendChild(eventDiv);
                     });
 
                     //handle checkbox changes
                     document.querySelectorAll('.event-checkbox').forEach(checkbox => {
-                        checkbox.addEventListener('change', function () {
+                        checkbox.addEventListener('change', function() {
                             const eventId = parseInt(this.getAttribute('data-event-id'));
                             if (this.checked) {
                                 if (!wishList.includes(eventId)) {

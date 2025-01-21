@@ -1,0 +1,14 @@
+.eventH2 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.event {
+    border: 3px solid #242424;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.eventP {
+    font-size: 20px;
+}

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Event 1",
-        "img": "pics/Flyer1.jpg",
+        "img": "Flyer1.jpg",
         "date": "25.05.2025",
         "city": "Berlin, Germany",
         "street": "Alexanderplatz",
@@ -19,7 +19,7 @@
     {
         "id": 2,
         "name": "Event 2",
-        "img": "pics/Flyer2.jpg",
+        "img": "Flyer2.jpg",
         "date": "12.04.2025",
         "city": "Munich, Germany",
         "street": "Marienplatz",
@@ -36,7 +36,7 @@
     {
         "id": 3,
         "name": "Event 3",
-        "img": "pics/Flyer3.jpg",
+        "img": "Flyer3.jpg",
         "date": "12.05.2025",
         "city": "Hamburg, Germany",
         "street": "Reeperbahn",
@@ -53,7 +53,7 @@
     {
         "id": 4,
         "name": "Event 4",
-        "img": "pics/Flyer4.jpg",
+        "img": "Flyer4.jpg",
         "date": "15.06.2025",
         "city": "Frankfurt, Germany",
         "street": "Zeil",
@@ -70,7 +70,7 @@
     {
         "id": 5,
         "name": "Event 5",
-        "img": "pics/Flyer5.jpg",
+        "img": "Flyer5.jpg",
         "date": "20.07.2025",
         "city": "Cologne, Germany",
         "street": "Hohe Straße",
@@ -87,7 +87,7 @@
     {
         "id": 6,
         "name": "Event 6",
-        "img": "pics/Flyer6.jpg",
+        "img": "Flyer6.jpg",
         "date": "30.08.2025",
         "city": "Stuttgart, Germany",
         "street": "Königstraße",
@@ -104,7 +104,7 @@
     {
         "id": 7,
         "name": "Event 7",
-        "img": "pics/Flyer7.jpg",
+        "img": "Flyer7.jpg",
         "date": "05.09.2025",
         "city": "Düsseldorf, Germany",
         "street": "Königsallee",
@@ -121,7 +121,7 @@
     {
         "id": 8,
         "name": "Event 8",
-        "img": "pics/Flyer8.jpg",
+        "img": "Flyer8.jpg",
         "date": "10.10.2025",
         "city": "Leipzig, Germany",
         "street": "Augustusplatz",
@@ -138,7 +138,7 @@
     {
         "id": 9,
         "name": "Event 9",
-        "img": "pics/Flyer9.jpg",
+        "img": "Flyer9.jpg",
         "date": "15.11.2025",
         "city": "Dresden, Germany",
         "street": "Prager Straße",
@@ -155,7 +155,7 @@
     {
         "id": 10,
         "name": "Event 10",
-        "img": "pics/Flyer10.jpg",
+        "img": "Flyer10.jpg",
         "date": "20.12.2025",
         "city": "Bremen, Germany",
         "street": "Schlachte",
@@ -172,7 +172,7 @@
     {
         "id": 11,
         "name": "Event 11",
-        "img": "pics/Flyer11.jpg",
+        "img": "Flyer11.jpg",
         "date": "25.01.2026",
         "city": "Hannover, Germany",
         "street": "Kröpcke",
@@ -189,7 +189,7 @@
     {
         "id": 12,
         "name": "Event 12",
-        "img": "pics/Flyer12.jpg",
+        "img": "Flyer12.jpg",
         "date": "30.02.2026",
         "city": "Nuremberg, Germany",
         "street": "Hauptmarkt",
@@ -206,7 +206,7 @@
     {
         "id": 13,
         "name": "Event 13",
-        "img": "pics/Flyer13.jpg",
+        "img": "Flyer13.jpg",
         "date": "05.03.2026",
         "city": "Essen, Germany",
         "street": "Kennedyplatz",
@@ -223,7 +223,7 @@
     {
         "id": 14,
         "name": "Event 14",
-        "img": "pics/Flyer14.jpg",
+        "img": "Flyer14.jpg",
         "date": "10.04.2026",
         "city": "Dortmund, Germany",
         "street": "Westenhellweg",
@@ -240,7 +240,7 @@
     {
         "id": 15,
         "name": "Event 15",
-        "img": "pics/Flyer15.jpg",
+        "img": "Flyer15.jpg",
         "date": "15.05.2026",
         "city": "Duisburg, Germany",
         "street": "Königstraße",
@@ -257,7 +257,7 @@
     {
         "id": 16,
         "name": "Event 16",
-        "img": "pics/Flyer16.jpg",
+        "img": "Flyer16.jpg",
         "date": "20.06.2026",
         "city": "Mannheim, Germany",
         "street": "Paradeplatz",
@@ -274,7 +274,7 @@
     {
         "id": 17,
         "name": "Event 17",
-        "img": "pics/Flyer17.jpg",
+        "img": "Flyer17.jpg",
         "date": "25.07.2026",
         "city": "Karlsruhe, Germany",
         "street": "Marktplatz",
@@ -291,7 +291,7 @@
     {
         "id": 18,
         "name": "Event 18",
-        "img": "pics/Flyer18.jpg",
+        "img": "Flyer18.jpg",
         "date": "30.08.2026",
         "city": "Freiburg, Germany",
         "street": "Münsterplatz",
@@ -308,7 +308,7 @@
     {
         "id": 19,
         "name": "Event 19",
-        "img": "pics/Flyer19.jpg",
+        "img": "Flyer19.jpg",
         "date": "05.09.2026",
         "city": "Mainz, Germany",
         "street": "Ludwigsstraße",
