@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <h2>${event.name}</h2>
                             <p>${event.date}</p>
                             <p>${event.description}</p>
+                            <a href="detail.html?eventId=${event.id}">details</a>
                             <p>${event.location}</p>`;
                         wishListContainer.appendChild(eventDiv);
                     }
@@ -74,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     eventsContainer.innerHTML = '';
                     filteredEvents.forEach(event => {
                         const eventDiv = document.createElement('div');
-                        eventDiv.className = 'event';
+                        eventDiv.className = 'event';                        
                         eventDiv.innerHTML = `
-                            <h2>${event.name}</h2>
-                            <p>${event.date}</p>
-                            <a href='detail.html?eventId=${event.id}'>Detail</a>
-                            <p>${event.description}</p>
-                            <p>${event.location}</p>
+                            <h2 class="eventH2">${event.name}</h2>
+                            <p class="eventP">${event.date}</p>
+                            <p class="eventP">${event.description}</p>
+                            <a href="detail.html?eventId=${event.id}">details</a>
+                            <p class="eventP">${event.location}</p>
                             <label>
                                 <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
                                 Add to Wishlist
