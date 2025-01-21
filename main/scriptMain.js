@@ -77,11 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     eventsContainer.innerHTML = '';
                     filteredEvents.forEach(event => {
                               
-                        //site breaking
-                        let enf = "Unbekannt";
-                        if (event.geoLocation && event.geoLocation.latitude && event.geoLocation.longitude) {
-                            enf = calculateDistance(event.geoLocation.latitude, event.geoLocation.longitude);
-                        }
+                        
 
 
                         const eventDiv = document.createElement('div');
