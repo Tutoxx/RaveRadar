@@ -59,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (wishList.includes(event.id)) {
                         const eventDiv = document.createElement('div');
                         eventDiv.className = 'event';
+                        eventDiv.onclick = () => {
+                            window.location.href = `detail.html?eventId=${event.id}`;
+                        };
                         eventDiv.innerHTML = `
                             <h2>${event.name}</h2>
                             <p>${event.date}</p>
@@ -73,14 +76,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 const renderEvents = (filteredEvents) => {
                     eventsContainer.innerHTML = '';
                     filteredEvents.forEach(event => {
+                              
+                        //site breaking
+                        let enf = "Unbekannt";
+                        if (event.geoLocation && event.geoLocation.latitude && event.geoLocation.longitude) {
+                            enf = calculateDistance(event.geoLocation.latitude, event.geoLocation.longitude);
+                        }
+
+
                         const eventDiv = document.createElement('div');
                         eventDiv.className = 'event';
+                        
+                        eventDiv.onclick = () => {
+                            window.location.href = `detail.html?eventId=${event.id}`;
+                        };
+                        
                         eventDiv.innerHTML = `
-                            <h2>${event.name}</h2>
-                            <p>${event.date}</p>
-                            <a href='detail.html?eventId=${event.id}'>Detail</a>
-                            <p>${event.description}</p>
-                            <p>${event.location}</p>
+                            <h2 class="eventH2">${event.name}</h2>
+                            <p class="eventP">${event.date}</p>
+                            <p class="eventP">${event.description}</p>
+                            <p class="eventP">${event.location}</p>
                             <label>
                                 <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
                                 Add to Wishlist
