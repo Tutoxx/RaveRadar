@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="scriptMain.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="wishList.html">Wishlist</a>
+
+    <h1>Events</h1>
+    
+    <form id="filter-form">        
+        <label for="price">Max Price:</label>
+        <input type="number" id="price" name="price">
+        
+        <label for="distance">Max Distance (km):</label>
+        <input type="number" id="distance" name="distance">
+        
+        <button type="button" id="filter-button">Filter</button>
+    </form>
+    
+    <div id="events-container"></div>
+</body>
+
+</html>

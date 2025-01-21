@@ -1,14 +1,41 @@
-.eventH2 {
-    font-size: 24px;
-    text-align: left;
+body {
+    background: url('pics/HomeBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fd6730;
 }
+
+h1 {
+    text-align: center;
+}
+
+#filter-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#filter-form label, #filter-form input, #filter-form button {
+    margin: 0 10px;
+}
+
 
 .event {
-    border: 3px solid #242424;
-    padding: 5px;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #949494a1;
+    padding: 20px;
+    margin: 100px 0;
+    border-radius: 15px;
+}
+.eventText {
+    display: flex;
+    flex-direction: column;
 }
 
-.eventP {
-    font-size: 20px;
+
+.eventIMG {
+    float: left;
+    width: 20%;
+    margin-right: 20px;
 }
