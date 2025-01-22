@@ -25,12 +25,14 @@ h1 {
 .event {
     display: flex;
     flex-direction: row;
+    border: none;
     background-color: #00000057;
     padding: 20px;
     margin: 100px 0;
     border-radius: 15px;
     margin-right: 20%;
     margin-left: 20%;
+    
 }
 
 .eventText {
