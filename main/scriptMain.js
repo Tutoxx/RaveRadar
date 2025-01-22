@@ -60,13 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         const eventDiv = document.createElement('div');
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
-                        <div class="eventText">
                             <h2>${event.name}</h2>
                             <p>${event.date}</p>
                             <p>${event.description}</p>
                             <a href="detail.html?eventId=${event.id}">details</a>
-                            <p>${event.location}</p>
-                            </div>`;
+                            <p>${event.location}</p>`;
                         wishListContainer.appendChild(eventDiv);
                     }
                 });
@@ -80,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
                         <img class="eventIMG" src="${event.img}">
-                        <div class="eventText">
                         <h2 class="eventH2">${event.name}</h2>
                         
                         <p class="eventP">${event.date}</p>
@@ -89,13 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         
                         <p class="eventP">${event.genre}</p>
                         <a href="detail.html?eventId=${event.id}">details</a>
-                        
+                        <br>
                         <label>
                             <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
                             Add to Wishlist
-                        </label>
-                        </div>
-                        `;
+                        </label>`;
                         eventsContainer.appendChild(eventDiv);
                     });
 
