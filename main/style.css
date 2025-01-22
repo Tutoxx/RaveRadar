@@ -23,19 +23,32 @@ h1 {
 .event {
     display: flex;
     flex-direction: row;
-    background-color: #949494a1;
+    background-color: #00000057;
     padding: 20px;
     margin: 100px 0;
     border-radius: 15px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 .eventText {
     display: flex;
     flex-direction: column;
 }
 
-
 .eventIMG {
     float: left;
     width: 20%;
     margin-right: 20px;
+}
+.LinkButtons{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 10px 20px;
+    background-color: #00000057;
+    color: #fd6730;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
 }
