@@ -12,10 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Event-Daten anzeigen
                 const detailContainer = document.getElementById('event-detail-container');
                 detailContainer.innerHTML = `
+                    <img class="eventIMG" src="${event.img}">
                     <h1>${event.name}</h1>
-                    <p>${event.date}</p>
-                    <p>${event.description}</p>
-                    <p>${event.location}</p>
+                    <p>Datum: ${event.date}</p>
+                    <p>Adresse: ${event.street} ${event.houseNumber} ${event.city} (${event.zipcode})</p>
+                    <p>Genre: ${event.genre}</p>
+                    <p>Tickets ab: ${event.price}€</p>
+                    <p>Koordinaten:</p>                   
+                    <p>Längengrad: ${event.geoLocation.longitude}</p>
+                    <p>Breitengrad: ${event.geoLocation.latitude}</p>
+                    <p>Beschreibung: ${event.description}</p>
                 `;
             } else {
                 document.getElementById('event-detail-container').innerHTML = 'Event nicht gefunden.';
