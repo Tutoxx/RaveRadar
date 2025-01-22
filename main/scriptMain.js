@@ -60,13 +60,17 @@ document.addEventListener('DOMContentLoaded', function () {
                         const eventDiv = document.createElement('div');
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
+                        <img class="eventIMG" src="${event.img}">
                         <div class="eventText">
-                            <h2>${event.name}</h2>
-                            <p>${event.date}</p>
-                            <p>${event.description}</p>
-                            <a href="detail.html?eventId=${event.id}">details</a>
-                            <p>${event.location}</p>
-                            </div>`;
+                        <h2 class="eventH2">${event.name}</h2>
+                        
+                        <p class="eventP">Datum: ${event.date}</p>
+                        
+                        <p class="eventP">Wo: ${event.city}</p>
+                        
+                        <p class="eventP">Genre: ${event.genre}</p>
+                        <a href="detail.html?eventId=${event.id}">Details</a>
+                        </div>`;
                         wishListContainer.appendChild(eventDiv);
                     }
                 });
@@ -83,16 +87,16 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="eventText">
                         <h2 class="eventH2">${event.name}</h2>
                         
-                        <p class="eventP">${event.date}</p>
+                        <p class="eventP">Datum: ${event.date}</p>
                         
-                        <p class="eventP">${event.city}</p>
+                        <p class="eventP">Wo: ${event.city}</p>
                         
-                        <p class="eventP">${event.genre}</p>
-                        <a href="detail.html?eventId=${event.id}">details</a>
+                        <p class="eventP">Genre: ${event.genre}</p>
+                        <a href="detail.html?eventId=${event.id}">Details</a>
                         
                         <label>
                             <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
-                            Add to Wishlist
+                            Zur Wishlist hinzufügen
                         </label>
                         </div>
                         `;
