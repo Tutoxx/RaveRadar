@@ -15,7 +15,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-#filter-form label, #filter-form input, #filter-form button {
+#filter-form label,
+#filter-form input,
+#filter-form button {
     margin: 0 10px;
 }
 
@@ -30,6 +32,7 @@ h1 {
     margin-right: 20%;
     margin-left: 20%;
 }
+
 .eventText {
     display: flex;
     flex-direction: column;
@@ -40,7 +43,8 @@ h1 {
     width: 20%;
     margin-right: 20px;
 }
-.LinkButtons{
+
+.LinkButtons {
     position: absolute;
     top: 5%;
     left: 5%;
