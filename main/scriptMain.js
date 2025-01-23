@@ -10,7 +10,7 @@ async function startUp() {
     }
 }
 
-//gets position data from browser (bodenlose fickerei, weil js asynchron ist)
+//gets position data from browser (sehr nervig, weil js asynchron ist)
 function getPos() {
     const meinPromise = new Promise((resolve, reject) => {
         if ("geolocation" in navigator) {
@@ -67,11 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h2 class="eventH2">${event.name}</h2>                        
                         <p class="eventP">Datum: ${event.date}</p>                        
                         <p class="eventP">Wo: ${event.city}</p>                        
-                        <p class="eventP">Genre: ${event.genre}</p>
-                        </div>
-
-                        <div id="Link">                        
-                        <a href="detail.html?eventId=${event.id}">Details</a>
+                        <p class="eventP">Genre: ${event.genre}</p>                        
+                        <a href="detail.html?eventId=${event.id}" id = "Link">Details</a>
                         </div>`;
                         wishListContainer.appendChild(eventDiv);
                     }
