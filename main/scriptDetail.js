@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Event-Daten anzeigen
                 const detailContainer = document.getElementById('event-detail-container');
                 detailContainer.innerHTML = `
-                    <img class="eventIMG" src="${event.img}">
                     <h1>${event.name}</h1>
+                    <div id="event-img-text">
+                    <img class="eventIMG"src="${event.img}">
+                    <div id="event-text">                    
                     <p>Datum: ${event.date}</p>
                     <p>Adresse: ${event.street} ${event.houseNumber} ${event.city} (${event.zipcode})</p>
                     <p>Genre: ${event.genre}</p>
@@ -21,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>Koordinaten:</p>                   
                     <p>Längengrad: ${event.geoLocation.longitude}</p>
                     <p>Breitengrad: ${event.geoLocation.latitude}</p>
+                    </div>
+                    </div>
                     <p>Beschreibung: ${event.description}</p>
                 `;
             } else {
