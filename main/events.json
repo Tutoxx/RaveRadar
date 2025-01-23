@@ -10,7 +10,7 @@
         "houseNumber": 23,
         "genre": "Electronic",
         "price": 18,
-        "description": "An exciting music event in Berlin.",
+        "description": "Die Electronic Soundscape Party in Berlin ist ein aufregendes Musikereignis, das elektronische Musikliebhaber aus der ganzen Stadt anzieht. Das Event findet am berühmten Alexanderplatz statt und bietet eine beeindruckende Klanglandschaft, die von einigen der besten DJs der Szene gestaltet wird. Mit einer Mischung aus pulsierenden Beats und hypnotischen Melodien verspricht die Party eine unvergessliche Nacht voller Tanz und guter Stimmung. Verpassen Sie nicht die Gelegenheit, in die Welt der elektronischen Musik einzutauchen und neue Leute kennenzulernen. Ein Muss für alle, die elektronische Musik lieben.",
         "geoLocation": {
             "longitude": 13.4050,
             "latitude": 52.5200
@@ -27,7 +27,7 @@
         "houseNumber": 45,
         "genre": "House",
         "price": 21,
-        "description": "A thrilling concert in Munich.",
+        "description": "Der Insomnia House Rave in München ist ein aufregendes Event, das House-Musikliebhaber aus der ganzen Region anzieht. Das Konzert findet am berühmten Marienplatz statt und bietet eine Nacht voller energiegeladener Beats und elektrisierender Atmosphäre. Mit einigen der besten House-DJs der Szene verspricht dieses Event eine unvergessliche Nacht voller Tanz und guter Stimmung. Verpassen Sie nicht die Gelegenheit, in die Welt der House-Musik einzutauchen und neue Leute kennenzulernen. Ein Muss für alle, die House-Musik lieben.",
         "geoLocation": {
             "longitude": 11.5820,
             "latitude": 48.1351
@@ -44,7 +44,7 @@
         "houseNumber": 67,
         "genre": "Techno",
         "price": 22,
-        "description": "A spectacular show in Hamburg.",
+        "description": "Der Space Rave in Hamburg ist ein spektakuläres Event, das Techno-Fans aus der ganzen Stadt anzieht. Die Veranstaltung findet auf der berühmten Reeperbahn statt und bietet eine Nacht voller intensiver Beats und futuristischer Klänge. Mit einer beeindruckenden Lichtshow und einigen der besten Techno-DJs der Szene verspricht dieses Event eine unvergessliche Nacht voller Energie und Tanz. Verpassen Sie nicht die Gelegenheit, in die Welt des Techno einzutauchen und neue Leute kennenzulernen. Ein Muss für alle, die Techno-Musik lieben.",
         "geoLocation": {
             "longitude": 9.9937,
             "latitude": 53.5511

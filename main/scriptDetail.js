@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>Breitengrad: ${event.geoLocation.latitude}</p>
                     </div>
                     </div>
-                    <p>Beschreibung: ${event.description}</p>
+                    <p>Beschreibung:</p>
+                    <p>${event.description}</p>
                 `;
             } else {
                 document.getElementById('event-detail-container').innerHTML = 'Event nicht gefunden.';
