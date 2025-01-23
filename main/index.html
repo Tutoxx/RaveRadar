@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>RaveRadar.Home</title>
     <script src="scriptMain.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,16 +12,17 @@
 <body>
     <a href="wishList.html" class = "LinkButtons">Wishlist</a>
 
-    <h1>Events</h1>
+    <h1>RaveRadar</h1>
     
     <form id="filter-form">        
-        <label for="price">Max Price:</label>
+        <label for="price">Max Preis:</label>
         <input type="number" id="price" name="price">
         
-        <label for="distance">Max Distance (km):</label>
+        <label for="distance">Max Distanz (in km):</label>
         <input type="number" id="distance" name="distance">
         
-        <button type="button" id="filter-button">Filter</button>
+        <button type="button" id="filter-button">Filter anwenden</button>
+        <button type="button" id="reset-button">Zurücksetzen</button>
     </form>
     
     <div id="events-container"></div>

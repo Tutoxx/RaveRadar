@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const wishListContainer = document.getElementById('wishList-container');
     const eventsContainer = document.getElementById('events-container');
     const filterButton = document.getElementById('filter-button');
+    const resetButton = document.getElementById('reset-button');
 
     fetch('events.json')
         .then(response => response.json())
@@ -61,14 +62,15 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
                         <img class="eventIMG" src="${event.img}">
+
                         <div class="eventText">
-                        <h2 class="eventH2">${event.name}</h2>
-                        
-                        <p class="eventP">Datum: ${event.date}</p>
-                        
-                        <p class="eventP">Wo: ${event.city}</p>
-                        
+                        <h2 class="eventH2">${event.name}</h2>                        
+                        <p class="eventP">Datum: ${event.date}</p>                        
+                        <p class="eventP">Wo: ${event.city}</p>                        
                         <p class="eventP">Genre: ${event.genre}</p>
+                        </div>
+
+                        <div id="Link">                        
                         <a href="detail.html?eventId=${event.id}">Details</a>
                         </div>`;
                         wishListContainer.appendChild(eventDiv);
@@ -84,16 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
                         <img class="eventIMG" src="${event.img}">
+
                         <div class="eventText">
-                        <h2 class="eventH2">${event.name}</h2>
-                        
-                        <p class="eventP">Datum: ${event.date}</p>
-                        
-                        <p class="eventP">Wo: ${event.city}</p>
-                        
+                        <h2 class="eventH2">${event.name}</h2>                        
+                        <p class="eventP">Datum: ${event.date}</p>                        
+                        <p class="eventP">Wo: ${event.city}</p>                        
                         <p class="eventP">Genre: ${event.genre}</p>
-                        <a href="detail.html?eventId=${event.id}">Details</a>
-                        
+                        <a href="detail.html?eventId=${event.id}" id = "Link">Details</a>                        
                         <label>
                             <input type="checkbox" class="event-checkbox" data-event-id="${event.id}">
                             Zur Wishlist hinzufügen
@@ -153,6 +152,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
 
                     renderEvents(filteredEvents);
+                });
+                resetButton.addEventListener('click', () => {
+                    document.getElementById('price').value = '';
+                    document.getElementById('distance').value = '';
+                    renderEvents(events);
                 });
             }
         })
