@@ -96,7 +96,7 @@ h3 {
 }
 
 /* Responsive styling for phone view */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
     }
