@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Event-Daten anzeigen
                 const detailContainer = document.getElementById('event-detail-container');
                 detailContainer.innerHTML = `
-                    <h1>${event.name}</h1>
+                    <h2>${event.name}</h2>
                     <div id="event-img-text">
                     <img class="eventIMG"src="${event.img}">
                     <div id="event-text">                    
