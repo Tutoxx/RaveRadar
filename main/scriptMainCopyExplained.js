@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded', function () { // code wartet bis d
                         });
 
                         //sorgt dafür das beim neuladen der Startseite die checkboxen der wishlist entsprechen
-                        const eventId = parseInt(checkbox.getAttribute('data-event-id'));
-                        if (wishList.includes(eventId)) {
-                            checkbox.checked = true;
+                        const eventId = parseInt(checkbox.getAttribute('data-event-id')); // holt sich data-event-id
+                        if (wishList.includes(eventId)) { //checkt ob diese data-eventid bereits in der wishlist ist
+                            checkbox.checked = true; // wenn drin setzt es diese checkbox auf true
                         }
                     });
                 };
