@@ -103,11 +103,13 @@ h3 {
 
     h3 {
         font-size: 1.5em;
+        margin-top: 100px;
     }
 
     #filter-form {
         flex-direction: column;
         align-items: center;
+        margin-top: 100px;
     }
 
     #filter-form label,
@@ -136,6 +138,18 @@ h3 {
     #Link {
         margin: 10px 0;
     }
+
+    .LinkButtons{
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+
+    
+
 
 }
 
