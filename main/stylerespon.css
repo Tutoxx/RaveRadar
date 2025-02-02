@@ -139,17 +139,16 @@ h3 {
         margin: 10px 0;
     }
 
-    .LinkButtons{
+    .LinkButtons {
         position: absolute;
         top: 130px;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+
     }
 
 
-    
+
 
 
 }
-
