@@ -27,7 +27,7 @@ function getPos() { // getPos funktion erstellen
             reject("Geolocation wird von diesem Browser nicht unterstützt."); // Promise wurde nicht erfolgreich aufgelöst
         }
     });
-    return meinPromise; // meinPromise das entweder werte enthält (wenn erfolgreich) oder einen error als String wird zurückgegeben
+    return meinPromise; // meinPromise, das entweder werte enthält (wenn erfolgreich) oder einen error als String, wird zurückgegeben
 }
 
 //berechnet entfernung zwischen der position des Users und einer angegbenen position
