@@ -19,7 +19,25 @@ h3 {
 #filter-form {
     display: flex;
     justify-content: center;
-    size: absolute;
+    
+    
+}
+
+.filter-attributes {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #00000087;
+    color: #fd6730;
+    border-radius: 10px;
+    border: none;
+}
+
+#filter-button, #reset-button {
+    padding: 10px 20px;
+    background-color: #00000087;
+    color: #fd6730;
+    border: none;
+    border-radius: 10px;
 }
 
 #filter-form label,
@@ -27,7 +45,6 @@ h3 {
 #filter-form button {
     margin: 0 10px;
 }
-
 
 .event {
     display: flex;
@@ -39,7 +56,6 @@ h3 {
     border-radius: 15px;
     margin-right: 20%;
     margin-left: 20%;
-
 }
 
 .eventText {
@@ -60,10 +76,9 @@ h3 {
     padding: 10px 20px;
     background-color: #00000057;
     color: #fd6730;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-
 }
 
 #Link {
@@ -85,7 +100,6 @@ h3 {
 }
 
 #event-detail-container h1 {
-
     text-align: center;
     font-size: 4em;
 }
@@ -98,4 +112,63 @@ h3 {
 #event-text {
     display: flex;
     flex-direction: column;
+}
+
+/* Responsiv für Handy */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-top: 100px;
+    }
+
+    #filter-form {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    #filter-form label,
+    #filter-form input,
+    #filter-form button {
+        margin: 10px 0;
+    }
+
+    .event,
+    #event-detail-container {
+        flex-direction: column;
+        margin: 20px;
+        padding: 15px;
+        margin-top: 150px;
+    }
+
+    .eventIMG {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #event-img-text {
+        flex-direction: column;
+    }
+
+    #Link {
+        margin: 10px 0;
+    }
+
+    .LinkButtons {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%, -50%); /* bewegt Element relativ zu sich selbst, in dem fal 50 % seiner eigenen breite nach liks und 50 % seiner eigeen höhe nach oben*/
+
+    }
+
+
+
+
+
 }
