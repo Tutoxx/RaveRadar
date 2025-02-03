@@ -23,6 +23,15 @@ h3 {
     
 }
 
+.filter-attributes {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #00000087;
+    color: #fd6730;
+    border-radius: 10px;
+    border: none;
+}
+
 #filter-button, #reset-button {
     padding: 10px 20px;
     background-color: #00000087;
