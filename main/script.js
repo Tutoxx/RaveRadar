@@ -1,7 +1,11 @@
 let wishList = JSON.parse(localStorage.getItem('wishList')) || [];
-let pos; //user position
+let pos; 
 
-//gets position data for further calculation on startup
+//event id für detailview seite
+const urlParams = new URLSearchParams(window.location.search);
+const eventId = parseInt(urlParams.get('eventId'));
+
+//ermittelt die position des users beim starten der Seite
 async function startUp() {
     try {
         pos = await getPos();
@@ -10,7 +14,7 @@ async function startUp() {
     }
 }
 
-//gets position data from browser (sehr nervig, weil js asynchron ist)
+//ermittelt die position des Users / returnt objekt mit {lat, lon}
 function getPos() {
     const meinPromise = new Promise((resolve, reject) => {
         if ("geolocation" in navigator) {
@@ -31,7 +35,7 @@ function getPos() {
 }
 
 
-// Berechnet Entfernung zwischen der Position des Users und einer angegebenen Ziel-Position
+//berechnet die entfernung zwischen dem User und einem beliebigen Punkt (mit turf.js)
 function calculateDistance(lat1, lon1) {
     const lat2 = pos.lat;
     const lon2 = pos.lon;
@@ -44,29 +48,13 @@ function calculateDistance(lat1, lon1) {
     return distance;
 };
 
-
-//berechnet entfernung zwischen der position des Users und einer angegbenen position
-/*
-function calculateDistance(lat1, lon1) {
-    const lat2 = pos.lat;
-    const lon2 = pos.lon;
-    const R = 6371; // Erdradius in Kilometern
-    const dLat = (lat2 - lat1) * Math.PI / 180;
-    const dLon = (lon2 - lon1) * Math.PI / 180;
-    const a =
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-        Math.sin(dLon / 2) * Math.sin(dLon / 2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return R * c; // Entfernung in Kilometern
-};
-*/
-
 document.addEventListener('DOMContentLoaded', function () {
+    //container für die automatische erstellung des contents
     const wishListContainer = document.getElementById('wishList-container');
     const eventsContainer = document.getElementById('events-container');
     const filterButton = document.getElementById('filter-button');
     const resetButton = document.getElementById('reset-button');
+    const eventDetailContainer = document.getElementById('event-detail-container');
 
     fetch('events.json')
         .then(response => response.json())
@@ -91,6 +79,35 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
             }
+            //läd events auf der detailview Seite
+            if (eventDetailContainer) {
+                const event = events.find(event => event.id === eventId);
+                if (event) {
+                    // Event-Daten anzeigen
+                    const detailContainer = document.getElementById('event-detail-container');
+                    detailContainer.innerHTML = `
+                        <h2>${event.name}</h2>
+                        <div id="event-img-text">
+                        <img class="eventIMG"src="${event.img}">
+                        <div id="event-text">                    
+                        <p>Datum: ${event.date}</p>
+                        <p>Adresse: ${event.street} ${event.houseNumber} ${event.city} (${event.zipcode})</p>
+                        <p>Genre: ${event.genre}</p>
+                        <p>Tickets ab: ${event.price}€</p>
+                        <p>Koordinaten:</p>                   
+                        <p>Längengrad: ${event.geoLocation.longitude}</p>
+                        <p>Breitengrad: ${event.geoLocation.latitude}</p>
+                        </div>
+                        </div>
+                        <p>Beschreibung:</p>
+                        <p>${event.description}</p>
+                    `;
+                } else {
+                    document.getElementById('event-detail-container').innerHTML = 'Event nicht gefunden.';
+                }
+            }
+
+
             //läd alle elemente auf der startseite
             if (eventsContainer) {
                 const renderEvents = (filteredEvents) => {
@@ -116,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventsContainer.appendChild(eventDiv);
                     });
 
-                    //handle checkbox changes
+                    //checkboxen
                     document.querySelectorAll('.event-checkbox').forEach(checkbox => {
                         checkbox.addEventListener('change', function () {
                             const eventId = parseInt(this.getAttribute('data-event-id'));
@@ -167,6 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     renderEvents(filteredEvents);
                 });
+                //reset button
                 resetButton.addEventListener('click', () => {
                     document.getElementById('price').value = '';
                     document.getElementById('distance').value = '';
