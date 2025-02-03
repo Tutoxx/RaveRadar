@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // URL-Parameter extrahieren
     const urlParams = new URLSearchParams(window.location.search);
     const eventId = parseInt(urlParams.get('eventId'));

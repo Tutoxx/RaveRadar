@@ -19,8 +19,8 @@ h3 {
 #filter-form {
     display: flex;
     justify-content: center;
-    
-    
+
+
 }
 
 .filter-attributes {
@@ -32,7 +32,8 @@ h3 {
     border: none;
 }
 
-#filter-button, #reset-button {
+#filter-button,
+#reset-button {
     padding: 10px 20px;
     background-color: #000000c5;
     color: #fd6730;
@@ -163,7 +164,8 @@ h3 {
         position: absolute;
         top: 130px;
         left: 50%;
-        transform: translate(-50%, -50%); /* bewegt Element relativ zu sich selbst, in dem fal 50 % seiner eigenen breite nach liks und 50 % seiner eigeen höhe nach oben*/
+        transform: translate(-50%, -50%);
+        /* bewegt Element relativ zu sich selbst, in dem fal 50 % seiner eigenen breite nach liks und 50 % seiner eigeen höhe nach oben*/
 
     }
 
