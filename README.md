@@ -6,17 +6,16 @@ Gruppenmitglieder:
     Milo Schäfer, Matrikelnummer: 28443501
     Till Bernards, Matrikelnummer: 13943463
 
-ggf. URL zur Webpräsenz im Internet
-
 Hilfsmittel:
     CoPilot
     ChatGPT
     GitHub
     Browser Suchen
     W3schools
-    Vorlseungsfolien
+    Vorlesungsfolien
 
-Beschreibung der notwendigen Schritte, um die Website lokal zu starten.
+Beschreibung der notwendigen Schritte, um die Website lokal zu starten:
+    index.html Datei öffnen
 
 Quellenverzeichnis:
     
