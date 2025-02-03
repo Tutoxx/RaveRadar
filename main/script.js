@@ -34,17 +34,13 @@ function getPos() {
     return meinPromise;
 }
 
-
 //berechnet die entfernung zwischen dem User und einem beliebigen Punkt (mit turf.js)
 function calculateDistance(lat1, lon1) {
     const lat2 = pos.lat;
     const lon2 = pos.lon;
-
     const point1 = turf.point([lon1, lat1]);  // [longitude, latitude]
     const point2 = turf.point([lon2, lat2]);
-
     const distance = turf.distance(point1, point2);
-
     return distance;
 };
 
@@ -67,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
                         <img class="eventIMG" src="${event.img}">
-
                         <div class="eventText">
                         <h2 class="eventH2">${event.name}</h2>                        
                         <p class="eventP">Datum: ${event.date}</p>                        
@@ -79,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 });
             }
+
             //läd events auf der detailview Seite
             if (eventDetailContainer) {
                 const event = events.find(event => event.id === eventId);
@@ -107,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
 
-
             //läd alle elemente auf der startseite
             if (eventsContainer) {
                 const renderEvents = (filteredEvents) => {
@@ -117,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventDiv.className = 'event';
                         eventDiv.innerHTML = `
                         <img class="eventIMG" src="${event.img}">
-
                         <div class="eventText">
                         <h2 class="eventH2">${event.name}</h2>                        
                         <p class="eventP">Datum: ${event.date}</p>                        
@@ -154,18 +148,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     });
                 };
-
                 renderEvents(events);
-
 
                 //filterfunktion
                 filterButton.addEventListener('click', () => {
                     const maxPrice = parseFloat(document.getElementById('price').value);
                     const maxDistance = parseFloat(document.getElementById('distance').value);
-
                     const filteredEvents = events.filter(event => {
                         let matches = true;
-
                         //preis
                         if (!isNaN(maxPrice) && event.price && event.price > maxPrice) {
                             matches = false;
@@ -178,12 +168,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                 matches = false;
                             }
                         }
-
                         return matches;
                     });
-
                     renderEvents(filteredEvents);
                 });
+                
                 //reset button
                 resetButton.addEventListener('click', () => {
                     document.getElementById('price').value = '';
