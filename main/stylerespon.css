@@ -19,6 +19,16 @@ h3 {
 #filter-form {
     display: flex;
     justify-content: center;
+    
+}
+#filter-button, #reset-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00000087;
+    color: #fd6730;
+    border: none;
+    border-radius: 10px;
+
 }
 
 #filter-form label,
@@ -57,7 +67,7 @@ h3 {
     padding: 10px 20px;
     background-color: #00000057;
     color: #fd6730;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
 }
