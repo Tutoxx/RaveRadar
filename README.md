@@ -14,6 +14,7 @@ Hilfsmittel:
     GitHub
     Browser Suchen
     W3schools
+    Vorlseungsfolien
 
 Beschreibung der notwendigen Schritte, um die Website lokal zu starten.
 
