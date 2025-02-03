@@ -14,10 +14,10 @@ async function startUp() { // asynchrone funktion Startup ertsellen -> durch asy
 function getPos() { // getPos funktion erstellen
     const meinPromise = new Promise((resolve, reject) => { // Promise wird erstellt und es wird eine Arrow-Funktion mit Parametern resolve und reject übergeben
         if ("geolocation" in navigator) { // prüft ob Browser Standortbestimmung unterstützt, falls ja direkt weiter, falls nein weiter in Z.25
-            navigator.geolocation.getCurrentPosition(function (position) { //eine Methode der geolocation API zur STndortbestimmung wird aufgerufen und der Standort bestimmt. Wurde der Standort erfolgreich bestimmt, wird die erste funktion mit dem position Objekt aufgerufen, aandernfalls wird die zweite Funktion in Z. 21 mit dem error aufgerufen
-                const lat = position.coords.latitude; // position ist Objekt welches als Attribut ein witeres Objekt coords hat, welches als Attribute unter aanderem latitude und longitude enthält
+            navigator.geolocation.getCurrentPosition(function (position) { //eine Methode der geolocation API zur Standortbestimmung wird aufgerufen und der Standort bestimmt. Wurde der Standort erfolgreich bestimmt, wird die erste funktion mit dem position Objekt aufgerufen, aandernfalls wird die zweite Funktion in Z. 21 mit dem error aufgerufen
+                const lat = position.coords.latitude; // position ist Objekt welches als Attribut ein weiteres Objekt coords hat, welches als Attribute unter anderem latitude und longitude enthält
                 const lon = position.coords.longitude; // speciher latitude und longitude 
-                resolve({ lat, lon }); // Das Priomise wurde erfolgreich aufgelöst und die werte lon und last werdenin meinPromise gespeichert 
+                resolve({ lat, lon }); // Das Priomise wurde erfolgreich aufgelöst und die werte lon und last werden in meinPromise gespeichert 
             }, function (error) { // die funktion falls navigator.geolocation.getCurrentPosition nicht erfolgreich war 
                 console.log("Fehler bei der Standortbestimmung");
                 reject("Fehler bei der Standortbestimmung"); // Das Promise wurde nicht erfolgfreich aufgelöst uhnd Der String wird als error in meinPromise gespeichert -> auch das was an catch block oben übergeben wird
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function () { // code wartet bis d
     const eventsContainer = document.getElementById('events-container');
     const filterButton = document.getElementById('filter-button');
 
-    fetch('events.json') // fetch holt die Events aus der events,json und gibt einen Promise zurück. Ist dder Promise erfolgreich wird der then block ausgeführt, ist es nicht erfolgreich wird der catch block in Z. 150 ausgefphrt
-        .then(response => response.json()) // Das Respons-Objekt (Antwort der fetch Anfrage) wird einer Arrowfunktion übergebn, die das Response Objekt mit response.JSON in ein JS-Array aus objekten umwandelt
+    fetch('events.json') // fetch holt die Events aus der events,json und gibt einen Promise zurück. Ist dder Promise erfolgreich wird der then block ausgeführt, ist es nicht erfolgreich wird der catch block in Z. 150 ausgeführt
+        .then(response => response.json()) // Das Response-Objekt (Antwort der fetch Anfrage) wird einer Arrowfunktion übergeben, die das Response Objekt mit response.JSON in ein JS-Array aus objekten umwandelt
         .then(events => { // events ist der Parameter, der das Array mit alllen Objekten enthält, wird in Arrowfunktion übergebn
             //läd alle Elemente auf der wishlist seite
             if (wishListContainer) { // prüft ob wishListContainer Elemente existiert -> sorgt dafür, dass code nicht abstürzt, falls element aus irgendeinem grund nicht vorhanden
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () { // code wartet bis d
                             <p>${event.description}</p>
                             <a href="detail.html?eventId=${event.id}">details</a>
                             <p>${event.location}</p>`; // hat div mit den einzelnen Attributen des Objektes gefüllt
-                        wishListContainer.appendChild(eventDiv); // hängt div an wishlsit dran
+                        wishListContainer.appendChild(eventDiv); // hängt div an wishlist dran
                     }
                 });
             }

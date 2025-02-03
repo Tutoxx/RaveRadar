@@ -139,17 +139,16 @@ h3 {
         margin: 10px 0;
     }
 
-    .LinkButtons{
+    .LinkButtons {
         position: absolute;
         top: 130px;
         left: 50%;
         transform: translate(-50%, -50%); /* bewegt Element relativ zu sich selbst, in dem fal 50 % seiner eigenen breite nach liks und 50 % seiner eigeen höhe nach oben*/
-        
+
     }
 
 
-    
+
 
 
 }
-
