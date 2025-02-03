@@ -30,7 +30,23 @@ function getPos() {
     return meinPromise;
 }
 
+
+// Berechnet Entfernung zwischen der Position des Users und einer angegebenen Ziel-Position
+function calculateDistance(lat1, lon1) {
+    const lat2 = pos.lat;
+    const lon2 = pos.lon;
+
+    const point1 = turf.point([lon1, lat1]);  // [longitude, latitude]
+    const point2 = turf.point([lon2, lat2]);
+
+    const distance = turf.distance(point1, point2);
+
+    return distance;
+};
+
+
 //berechnet entfernung zwischen der position des Users und einer angegbenen position
+/*
 function calculateDistance(lat1, lon1) {
     const lat2 = pos.lat;
     const lon2 = pos.lon;
@@ -44,6 +60,7 @@ function calculateDistance(lat1, lon1) {
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     return R * c; // Entfernung in Kilometern
 };
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
     const wishListContainer = document.getElementById('wishList-container');
