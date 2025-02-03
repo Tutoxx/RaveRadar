@@ -26,7 +26,7 @@ h3 {
 .filter-attributes {
     padding: 5px 10px;
     margin-left: 10px;
-    background-color: #00000087;
+    background-color: #000000ba;
     color: #fd6730;
     border-radius: 10px;
     border: none;
@@ -34,7 +34,7 @@ h3 {
 
 #filter-button, #reset-button {
     padding: 10px 20px;
-    background-color: #00000087;
+    background-color: #000000c5;
     color: #fd6730;
     border: none;
     border-radius: 10px;
@@ -74,7 +74,7 @@ h3 {
     top: 2%;
     left: 5%;
     padding: 10px 20px;
-    background-color: #00000057;
+    background-color: #000000b1;
     color: #fd6730;
     border-radius: 10px;
     font-weight: bold;
@@ -91,7 +91,7 @@ h3 {
     display: flex;
     flex-direction: column;
     border: none;
-    background-color: #000000a4;
+    background-color: #000000c0;
     padding: 20px;
     margin: 100px 0;
     border-radius: 15px;
