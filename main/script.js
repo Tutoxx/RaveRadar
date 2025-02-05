@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventsContainer.appendChild(eventDiv);
                     });
 
-                    //checkboxen
+                    //Wishlist-checkboxen
                     document.querySelectorAll('.event-checkbox').forEach(checkbox => {
                         checkbox.addEventListener('change', function () {
                             const eventId = parseInt(this.getAttribute('data-event-id'));
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             localStorage.setItem('wishList', JSON.stringify(wishList));
                         });
 
-                        //sorgt dafür das beim neuladen der Startseite die checkboxen der wishlist entsprechen
+                        //sorgt dafür, dass beim neuladen der Startseite die checkboxen der Wishlist entsprechen
                         const eventId = parseInt(checkbox.getAttribute('data-event-id'));
                         if (wishList.includes(eventId)) {
                             checkbox.checked = true;

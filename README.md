@@ -14,8 +14,11 @@ Hilfsmittel:
     W3schools
     Vorlesungsfolien
 
+    JS Library:
+    turf.js
+
 Beschreibung der notwendigen Schritte, um die Website lokal zu starten:
-    index.html Datei öffnen
+    index.html Datei im Browser öffnen
 
 Quellenverzeichnis:
     
@@ -53,5 +56,14 @@ Quellenverzeichnis:
         Hintergrundbild:
         https://de.pinterest.com/pin/791085490829770043/
 
-FEHLT NOCH: angeben was von KI generierter code ist!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-zum Beispiel die "calculateDistance" function
+Von KI generierter Code (file-Zeilen)
+
+    events.json:
+    19-325
+    
+    script.js:
+    69-76
+    88-102
+    118-129
+    135-154
+    186-190
