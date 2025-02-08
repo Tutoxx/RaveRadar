@@ -1,11 +1,11 @@
 let wishList = JSON.parse(localStorage.getItem('wishList')) || [];
 let pos; 
 
-//event id für detailview seite
+// Event-ID für Detailansicht-Seite
 const urlParams = new URLSearchParams(window.location.search);
 const eventId = parseInt(urlParams.get('eventId'));
 
-//ermittelt die position des users beim starten der Seite
+// Ermittelt die Position des Users beim Starten der Seite
 async function startUp() {
     try {
         pos = await getPos();
@@ -14,7 +14,7 @@ async function startUp() {
     }
 }
 
-//ermittelt die position des Users / returnt objekt mit {lat, lon}
+// Ermittelt die Position des Users / gibt ein Objekt mit {lat, lon} zurück
 function getPos() {
     const meinPromise = new Promise((resolve, reject) => {
         if ("geolocation" in navigator) {
@@ -34,7 +34,7 @@ function getPos() {
     return meinPromise;
 }
 
-//berechnet die entfernung zwischen dem User und einem beliebigen Punkt (mit turf.js)
+// Berechnet die Entfernung zwischen dem User und einem beliebigen Punkt (mit turf.js)
 function calculateDistance(lat1, lon1) {
     const lat2 = pos.lat;
     const lon2 = pos.lon;
@@ -45,7 +45,7 @@ function calculateDistance(lat1, lon1) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-    //container für die automatische erstellung des contents
+    // Container für die automatische Erstellung des Contents
     const wishListContainer = document.getElementById('wishList-container');
     const eventsContainer = document.getElementById('events-container');
     const filterButton = document.getElementById('filter-button');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('events.json')
         .then(response => response.json())
         .then(events => {
-            //läd alle Elemente auf der wishlist seite
+            // Lädt alle Elemente auf der Wishlist-Seite
             if (wishListContainer) {
                 events.forEach(event => {
                     if (wishList.includes(event.id)) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
 
-            //läd events auf der detailview Seite
+            // Lädt Events auf der Detailansicht-Seite
             if (eventDetailContainer) {
                 const event = events.find(event => event.id === eventId);
                 if (event) {
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
 
-            //läd alle elemente auf der startseite
+            // Lädt alle Elemente auf der Startseite
             if (eventsContainer) {
                 const renderEvents = (filteredEvents) => {
                     eventsContainer.innerHTML = '';
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         eventsContainer.appendChild(eventDiv);
                     });
 
-                    //Wishlist-checkboxen
+                    // Wishlist-Checkboxen
                     document.querySelectorAll('.event-checkbox').forEach(checkbox => {
                         checkbox.addEventListener('change', function () {
                             const eventId = parseInt(this.getAttribute('data-event-id'));
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             localStorage.setItem('wishList', JSON.stringify(wishList));
                         });
 
-                        //sorgt dafür, dass beim neuladen der Startseite die checkboxen der Wishlist entsprechen
+                        // Sorgt dafür, dass beim Neuladen der Startseite die Checkboxen der Wishlist entsprechen
                         const eventId = parseInt(checkbox.getAttribute('data-event-id'));
                         if (wishList.includes(eventId)) {
                             checkbox.checked = true;
@@ -150,18 +150,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 };
                 renderEvents(events);
 
-                //filterfunktion
+                // Filterfunktion
                 filterButton.addEventListener('click', () => {
                     const maxPrice = parseFloat(document.getElementById('price').value);
                     const maxDistance = parseFloat(document.getElementById('distance').value);
                     const filteredEvents = events.filter(event => {
                         let matches = true;
-                        //preis
+                        // Preis
                         if (!isNaN(maxPrice) && event.price && event.price > maxPrice) {
                             matches = false;
                         }
 
-                        //distance
+                        // Entfernung
                         if (!isNaN(maxDistance) && event.geoLocation) {
                             const distance = calculateDistance(event.geoLocation.latitude, event.geoLocation.longitude);
                             if (distance > maxDistance) {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     renderEvents(filteredEvents);
                 });
                 
-                //reset button
+                // Reset-Button
                 resetButton.addEventListener('click', () => {
                     document.getElementById('price').value = '';
                     document.getElementById('distance').value = '';
@@ -184,5 +184,5 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error fetching events:', error));
 });
 
-//läd die Position des Users beim lader der Website
+// Lädt die Position des Users beim Laden der Website
 startUp();
