@@ -1,8 +1,8 @@
 # RaveRadar
-RaveRadar - entdecke elektronische Musik Events in deiner Umgebung. 
+RaveRadar - entdecke elektronische Musik-Events in deiner Umgebung.
 
 Gruppenmitglieder:
-    Léo König, Matrikelnummer:16943456
+    Léo König, Matrikelnummer: 16943456
     Milo Schäfer, Matrikelnummer: 28443501
     Till Bernards, Matrikelnummer: 13943463
 
@@ -10,8 +10,8 @@ Hilfsmittel:
     CoPilot
     ChatGPT
     GitHub
-    Browser Suchen
-    W3schools
+    Browser-Suchen
+    W3Schools
     Vorlesungsfolien
 
     JS Library:
@@ -21,18 +21,18 @@ Beschreibung der notwendigen Schritte, um die Website lokal zu starten:
     index.html Datei im Browser öffnen
 
 Quellenverzeichnis:
-    
+
     Hilfsmittel:
-    https://chatgpt.com
-    https://www.w3schools.com
-    https://github.com
-    
-    Unser repository:
-    https://github.com/Tutoxx/RaveRadar
+        https://chatgpt.com
+        https://www.w3schools.com
+        https://github.com
+
+    Unser Repository:
+        https://github.com/Tutoxx/RaveRadar
 
     Bilder:
 
-        Flyer:
+    Flyer:
         https://de.pinterest.com/pin/791085490829813546/
         https://de.pinterest.com/pin/791085490829813534/
         https://de.pinterest.com/pin/791085490829813532/
@@ -53,17 +53,17 @@ Quellenverzeichnis:
         https://de.pinterest.com/pin/791085490829769794/
         https://de.pinterest.com/pin/791085490829769776/
 
-        Hintergrundbild:
+    Hintergrundbild:
         https://de.pinterest.com/pin/791085490829770043/
 
-Von KI generierter Code (file-Zeilen)
+Von KI generierter Code (file-Zeilen):
 
     events.json:
-    19-325
-    
+        19-325
+
     script.js:
-    69-76
-    88-102
-    118-129
-    135-154
-    186-190
+        69-76
+        88-102
+        118-129
+        135-154
+        186-190
